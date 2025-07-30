@@ -11,5 +11,7 @@ pipeline
     sh 'mvn validate'
 }
         }}
+
+        
     }
 }
