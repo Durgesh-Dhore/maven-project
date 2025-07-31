@@ -3,6 +3,7 @@ pipeline
     agent any
     stages
     {
+        // CI part
         stage ('scm checkout')
         {steps { git 'https://github.com/kumargaurav039/maven-project.git' }}
 
@@ -16,6 +17,7 @@ pipeline
     sh 'mvn package'
 }
         }}
+        //CD part
         stage ('deploy the code on tomcat')
         {steps {
             sshagent(['DEVCICD']) {
