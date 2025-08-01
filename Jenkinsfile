@@ -5,7 +5,7 @@ pipeline
     {
         // CI part
         stage ('scm checkout')
-        {steps { git 'https://github.com/kumargaurav039/maven-project.git' }}
+        {steps { git 'https://github.com/Durgesh-Dhore/maven-project.git' }}
 
         stage ('validate')
         {steps { withMaven(globalMavenSettingsConfig: '', jdk: 'JAVA_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true) {
