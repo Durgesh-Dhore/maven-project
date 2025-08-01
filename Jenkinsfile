@@ -17,7 +17,6 @@ pipeline
     sh 'mvn clean package'
 }
         }}
-        
         //CD part
         stage ('deploy the code on tomcat')
         {steps {
